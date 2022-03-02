@@ -1,0 +1,132 @@
+* {
+  box-sizing: border-box;
+}
+
+:root {
+  --myRed1: #fd0a0a;
+  /*Green  */
+  --myGreen: #37af65;
+  --myGreen2: #008000;
+  /* Blue */
+  --myBlue: rgb(0, 110, 255) ;
+  --myBlueP : rgb(76, 68, 148, 0.4);
+  --myBluePOpacity:  rgb(76, 68, 148, 0.6);
+  --myNavyblue: #0a0a3a;
+  /* white */
+  --myWhite: #ffffff;
+  /* Black */
+  --myBlack: #000000;
+  }
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Poppins', sans-serif;
+  font-size: 17px;
+  line-height: 1.6;
+}
+
+#container {
+  display: grid;
+  grid-template-columns: 1fr 3fr;
+  grid-template-areas: 'nav1 main1';
+  gap: 20px;
+}
+/* main section */
+#main-doc {
+  grid-area: main1;
+  padding: 20px;
+
+}
+#navbar { 
+  grid-area: nav1;
+    position: relative; 
+   padding: 20px 0 20px 20px; 
+
+}
+
+ #navbar a {
+  display: block;
+  text-decoration: none;
+  color: black;
+  padding: 5px;
+  margin: 10px 0;
+  text-decoration: none;
+  font-size: 22px;
+}
+
+#navbar header {
+   width: 26%;  
+  height: 500px;
+  font-size: 22px;
+  font-weight: bold;
+   position: fixed; 
+  padding-right: 0;
+  padding-top: 20px;
+  }
+  #using_promise {
+    padding-top: 20px;
+  }
+
+#scroll {
+  width: 25%;
+  height: 400px;
+  overflow: scroll;
+  position: fixed;
+  margin-top: 80px;
+}
+
+.main-section header {
+  font-size: 22px;
+  font-weight: bold;
+}
+code {
+  display: block;
+  padding: 20px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  background-color: rgb(207, 207, 207);
+}
+footer span {
+  font-weight: bold;
+}
+
+@media screen and (max-width: 850px) {
+
+  #container {
+    display: block;
+    max-width: 100vw;
+    padding: 10px;
+    position: relative;
+  }
+ #main-doc {
+  display: block;
+width: 100%;
+padding: 10px 10px;
+position: relative; 
+   top: 50px;
+}
+#navbar {
+  display: block;
+  width: 100%;
+  padding: 10px 5px;
+   position: relative; 
+   top:0; 
+  }
+  #navbar header {
+    width: 100%;
+    position: relative;
+    height: 50px
+  }
+
+#scroll  {
+  position: relative;
+  width: 100%;
+  height: 400px;
+}
+code {
+  padding: 3px;
+  word-wrap: break-word;
+}
+}
+
